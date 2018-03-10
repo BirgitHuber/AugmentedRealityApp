@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AR-Object-Recognition</string>
+
+    <string name="exception_tango_error">"Tango exception! Try again!"</string>
+    <string name="exception_tango_invalid">"Tango invalid exception! Try again!"</string>
+    <string name="exception_out_of_date">"Tango service outdated! Update!"</string>
+    <string name="permission_camera">"Camera permission needed!"</string>
+
+</resources>

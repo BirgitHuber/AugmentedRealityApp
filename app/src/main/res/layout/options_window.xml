@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/options_window_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    >
+
+    <!-- header bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/menu_headerbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_primary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textSize="30dp"
+                android:textColor="@android:color/white"/>
+
+            <ImageButton
+                android:id="@+id/button_close_window"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_button_close"
+                android:background="@android:color/transparent"
+                android:onClick="toggleMenu"
+                android:layout_margin="3dp"
+                android:layout_gravity="top|right"
+                />
+
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="65dp"
+        android:layout_alignParentStart="true">
+
+        <!-- barcode scanning -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/barcodescanner_button"
+                android:textOn="scan barcode ON"
+                android:textOff="scan barcode OFF"/>
+
+        </LinearLayout>
+
+        <!-- object scanning with nn -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/object_scan"
+                android:textOn="recognize Image ON"
+                android:textOff="recognize Image OFF"/>
+
+        </LinearLayout>
+
+
+        <!-- objects placing -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/objects_button"
+                android:textOn="add text objects ON"
+                android:textOff="add text objects OFF"/>
+
+        </LinearLayout>
+
+        <!-- measure -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/measureline_button"
+                android:textOn="measure line ON"
+                android:textOff="measure line OFF"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reset Line"
+                android:id="@+id/reset_line"
+                />
+
+        </LinearLayout>
+
+
+        <!-- position and device orientation -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Position"/>
+
+            <TextView
+                android:id="@+id/position_text"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:text="Orientation"/>
+
+                <TextView
+                    android:id="@+id/position_text_orientation"
+                    android:textSize="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

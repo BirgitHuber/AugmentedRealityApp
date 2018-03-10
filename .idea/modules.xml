@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ProjectBA.iml" filepath="$PROJECT_DIR$/ProjectBA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tango_java_lib/tango_java_lib.iml" filepath="$PROJECT_DIR$/tango_java_lib/tango_java_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tango_support_java_lib/tango_support_java_lib.iml" filepath="$PROJECT_DIR$/tango_support_java_lib/tango_support_java_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tango_ux_support_library/tango_ux_support_library.iml" filepath="$PROJECT_DIR$/tango_ux_support_library/tango_ux_support_library.iml" />
+    </modules>
+  </component>
+</project>

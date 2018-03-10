@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('tango_ux_support_library.aar'))

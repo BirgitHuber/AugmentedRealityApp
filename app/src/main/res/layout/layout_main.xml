@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_augmented_reality"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.birgit.projectba.MainActivity">
+
+
+    <!-- surface view that holds the rendered graphics -->
+    <org.rajawali3d.view.SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"
+        />
+
+
+    <!-- tango ux layout for showing user information from tango library -->
+    <com.google.atap.tango.ux.TangoUxLayout
+        android:id="@+id/tango_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <!-- open menu button -->
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_button_small"
+            android:background="@android:color/transparent"
+            android:onClick="toggleMenu"
+            android:layout_margin="16dp"
+            android:layout_gravity="bottom|right"
+            android:elevation="16dp"/>
+
+    </com.google.atap.tango.ux.TangoUxLayout>
+
+</RelativeLayout>
